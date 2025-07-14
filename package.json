@@ -1,14 +1,14 @@
 {
   "name": "jira-toggl",
-  "version": "1.7.1",
+  "version": "1.8.0",
   "description": "A Vue.js web extension",
   "author": "Simon Eldevig <simoneldevig@gmail.com>",
   "scripts": {
     "lint": "eslint --ext .js,.vue src",
     "prettier": "prettier \"src/**/*.{js,vue}\"",
     "prettier:write": "npm run prettier -- --write",
-    "build": "cross-env NODE_ENV=production webpack --hide-modules",
-    "build:dev": "cross-env NODE_ENV=development webpack --hide-modules",
+    "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider NODE_ENV=production webpack --hide-modules",
+    "build:dev": "cross-env NODE_OPTIONS=--openssl-legacy-provider NODE_ENV=development webpack --hide-modules",
     "build:zip": "npm run build && node scripts/build-zip.js",
     "watch": "npm run build -- --watch",
     "watch:dev": "cross-env HMR=true npm run build:dev -- --watch"
@@ -47,8 +47,8 @@
     "eslint-plugin-vue": "^5.2.3",
     "file-loader": "^1.1.11",
     "mini-css-extract-plugin": "^0.4.4",
-    "node-sass": "^4.13.1",
-    "sass-loader": "^7.1.0",
+    "sass": "^1.50.0",
+    "sass-loader": "^10.2.0",
     "vue-loader": "^15.4.2",
     "vue-template-compiler": "^2.6.10",
     "web-ext-types": "^2.1.0",
