@@ -1,10 +1,6 @@
-[![Build Status](https://travis-ci.org/simoneldevig/jira-toggl.svg?branch=master)](https://travis-ci.org/simoneldevig/jira-toggl)
-
 ***
 
-:warning: **Archived** :warning:
-
-I'm archiving this repo as I'm no longer using JIRA together with Toggl. Feel free to fork it and release a new version.
+This is a fork of the original [Jira Toggl](https://github.com/simoneldevig/jira-toggl) project.
 
 ***
 
